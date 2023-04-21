@@ -1,34 +1,38 @@
 import React from "react";
-import Navbar from "./Navbar.jsx";
-import Jumbotron from "./Jumbotron.jsx";
-import CardOne from "./CardOne.jsx";
-import CardTwo from "./CardTwo.jsx";
-import Footer from "./Footer.jsx";
-
-//create your first component
-const Home = () => {
-	return (
-		<div className="container bg-white">
-		<div className="d-flex justify-content-evenly"/>	
-			<Navbar/>
-			<div className="container">
-				<Jumbotron/>
-				<div className="d-flex">			
-					<CardOne/>
-					<CardTwo/>
-					<CardOne/>
-					<CardTwo/>
-				</div> 
-			</div>
-			<Footer/>
-		</div>
-
-
+const Navbar=()=>{
+return(
 		
-		 
-				
-			 
-	);
-};
+	
 
-export default Home;
+<div className="bg-dark">
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark container">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">Beautiful Places</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav ms-auto">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">About</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Services</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+</div>	
+
+);
+
+};
+export default Navbar;
